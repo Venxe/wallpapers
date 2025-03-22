@@ -1,30 +1,30 @@
-# Set variables
-$INSTALL_DIR = "$env:TEMP\wallpapers"
-$WALLS_DIR = "C:\Users\$env:USERNAME\Pictures\Wallpapers\Walls"
+$installDir = "$env:TEMP\wallpapers"
+$wallpapersDir = "C:\Users\$env:USERNAME\Pictures\Wallpapers"
 
-# Download wallpapers repository
-Write-Host "Downloading wallpapers repository..."
-git clone --depth 1 https://github.com/Venxe/wallpapers.git "$INSTALL_DIR"
-
-# Processing and moving wallpapers
-Write-Host "Processing and moving wallpapers..."
-$files = Get-ChildItem -Path "$INSTALL_DIR\wallpapers" -Recurse -Include *.jpg, *.jpeg, *.png, *.webp
-
-foreach ($file in $files) {
-    $category = $file.DirectoryName.Replace("$INSTALL_DIR\wallpapers\", "")
-    $dest_dir = Join-Path -Path $WALLS_DIR -ChildPath $category
-
-    # Create category directory if it doesn't exist
-    if (-not (Test-Path -Path $dest_dir)) {
-        New-Item -ItemType Directory -Force -Path $dest_dir
-    }
-
-    # Move the file
-    Move-Item -Path $file.FullName -Destination $dest_dir
+# Check if the directory exists, if not, create it
+if (-not (Test-Path $wallpapersDir)) {
+    New-Item -ItemType Directory -Force -Path $wallpapersDir
 }
 
-# Clean up temporary files
-Write-Host "Cleaning up temporary files..."
-Remove-Item -Recurse -Force $INSTALL_DIR
+# Cloning the repository
+git clone --depth 1 https://github.com/Venxe/wallpapers.git $installDir
+
+# Moving the wallpapers
+Get-ChildItem -Path "$installDir\wallpapers" -Recurse -Include *.jpg, *.jpeg, *.png, *.webp | ForEach-Object {
+    $file = $_
+    $category = $file.DirectoryName.Replace("$installDir\wallpapers\", "")
+    $destDir = "$wallpapersDir\$category"
+
+    # Check if the category directory exists, if not, create it
+    if (-not (Test-Path $destDir)) {
+        New-Item -ItemType Directory -Force -Path $destDir
+    }
+
+    # Move the wallpaper file
+    Move-Item -Path $file.FullName -Destination $destDir
+}
+
+# Clean up
+Remove-Item -Recurse -Force $installDir
 
 Write-Host "Wallpaper installation complete."
