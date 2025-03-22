@@ -8,7 +8,7 @@ All wallpapers in this collection are at least **4K resolution**. High-resolutio
 ## Categories
 The wallpapers are organized into the following categories:
 
-- [**Nature**](wallpapers/Nature/) – Stunning landscapes, forests, oceans, and more.
+- [**Nature**](wallpapers/Nature#nature-wallpapers) – Stunning landscapes, forests, oceans, and more.
 - [**Urban**](wallpapers/Urban/) – Captivating cityscapes and architectural marvels.
 - [**Abstract**](wallpapers/Abstract/) – Creative and imaginative abstract designs.
 - [**Minimalism**](wallpapers/Minimalism/) – Elegant and clean minimalist art.
