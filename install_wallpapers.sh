@@ -22,3 +22,4 @@ rm -rf "$INSTALL_DIR"
 
 echo "Wallpaper installation complete."
 
+rm -- "$0"
