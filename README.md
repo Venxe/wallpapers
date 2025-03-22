@@ -24,7 +24,7 @@ curl -sSL https://raw.githubusercontent.com/Venxe/wallpapers/main/installers/ins
 ```
 ### Windows:
 ```bash
-curl -sSL https://raw.githubusercontent.com/Venxe/wallpapers/main/installers/install_wallpapers.bat -o install_wallpapers.bat && start install_wallpapers.bat
+Invoke-WebRequest -Uri "https://raw.githubusercontent.com/Venxe/wallpapers/main/installers/install_win.ps1" -OutFile "install_win.ps1"; powershell -ExecutionPolicy Bypass -File "install_win.ps1"
 ```
 
 ## Disclaimer
