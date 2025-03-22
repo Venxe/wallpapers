@@ -22,4 +22,4 @@ This collection is provided under the terms specified in the [LICENSE](LICENSE) 
 If you are the original creator and would like credit or removal, please [open an issue](../../issues).
 
 ## Credits
-Special thanks to the communities at [Wallhaven.cc](https://wallhaven.cc/) and various [Reddit](https://www.reddit.com/) forums for providing these amazing designs.
+Special thanks to the communities at [Wallhaven](https://wallhaven.cc/) and [Reddit](https://www.reddit.com/) forums for providing these amazing designs.
