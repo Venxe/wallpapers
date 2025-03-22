@@ -18,13 +18,19 @@ Get-ChildItem -Path "$installDir\wallpapers" -Recurse -Include *.jpg, *.jpeg, *.
         New-Item -ItemType Directory -Force -Path $destDir
     }
 
-    Move-Item -Path $_.FullName -Destination $destDir
+    $destFile = "$destDir\$($_.Name)"
+
+    if (Test-Path $destFile) {
+        Write-Warning "File '$($_.Name)' already exists in the destination directory. Skipping."
+    } else {
+        Move-Item -Path $_.FullName -Destination $destDir
+    }
 }
 
 # Clean up temporary files
 Remove-Item -Recurse -Force $installDir
 
-Write-Host "Wallpaper installation complete."
-
 # Delete the script itself
 Remove-Item -Path $MyInvocation.MyCommand.Path -Force
+
+Write-Host "Wallpaper installation complete."
