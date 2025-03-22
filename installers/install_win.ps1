@@ -3,6 +3,11 @@
 $installDir = "C:\temp\wallpapers"
 $wallsDir = "C:\Users\sayimburak\wallpapers\walls"
 
+# Hedef dizini oluştur
+if (-not (Test-Path -Path $installDir)) {
+    New-Item -ItemType Directory -Force -Path $installDir
+}
+
 Write-Host "Downloading wallpapers repository..."
 Invoke-WebRequest -Uri "https://github.com/Venxe/wallpapers/archive/refs/heads/main.zip" -OutFile "$installDir\wallpapers.zip"
 
