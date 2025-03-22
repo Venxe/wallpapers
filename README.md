@@ -16,6 +16,17 @@ The wallpapers are organized into the following categories:
 - [**Gaming**](wallpapers/Gaming/) – High-energy and visually captivating gaming-themed wallpapers.
 - [**Art**](wallpapers/Art/) – A collection of various artistic works, including digital and traditional styles.
 
+## Installation
+Run the following command to download and install the wallpapers:
+### Linux:
+```bash
+curl -sSL https://raw.githubusercontent.com/Venxe/wallpapers/main/install_wallpapers.sh -o install_wallpapers.sh && chmod +x install_wallpapers.sh && ./install_wallpapers.sh
+```
+### Windows:
+```bash
+curl -sSL https://raw.githubusercontent.com/Venxe/wallpapers/main/install_wallpapers.sh -o install_wallpapers.sh && chmod +x install_wallpapers.sh && ./install_wallpapers.sh
+```
+
 ## Disclaimer
 This collection is provided under the terms specified in the [LICENSE](LICENSE) file. All wallpapers are the property of their respective creators. I do not claim ownership of any works here; I have only compiled and optimized them for easier access.  
 
