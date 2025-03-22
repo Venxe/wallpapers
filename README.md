@@ -1,6 +1,6 @@
-# My Amazing Wallpaper Collection
+# My Awesome Wallpaper Collection
 
-Welcome to my amazing wallpaper collection! This repository features a carefully curated selection of stunning wallpapers, all created by talented and creative artists. I am not the creator of these works; I have simply compiled them for you to enjoy.
+Welcome to my awesome wallpaper collection! This repository features a carefully curated selection of stunning wallpapers, all created by talented and creative artists.
 
 ## Image Quality
 All wallpapers in this collection are at least **4K resolution**. High-resolution PNG images have been converted to **JPEG format using "jpeg-li"** to optimize file size while preserving quality. If images were already well-optimized in their original format, they have been left unchanged.
