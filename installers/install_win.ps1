@@ -25,3 +25,6 @@ Get-ChildItem -Path "$installDir\wallpapers" -Recurse -Include *.jpg, *.jpeg, *.
 Remove-Item -Recurse -Force $installDir
 
 Write-Host "Wallpaper installation complete."
+
+# Delete the script itself
+Remove-Item -Path $MyInvocation.MyCommand.Path -Force
