@@ -2,17 +2,27 @@
 
 $installDir = "C:\temp\wallpapers"
 $wallsDir = "C:\Users\sayimburak\wallpapers\walls"
+$zipFile = "$installDir\wallpapers.zip"
 
-# Hedef dizini oluştur
 if (-not (Test-Path -Path $installDir)) {
     New-Item -ItemType Directory -Force -Path $installDir
 }
 
 Write-Host "Downloading wallpapers repository..."
-Invoke-WebRequest -Uri "https://github.com/Venxe/wallpapers/archive/refs/heads/main.zip" -OutFile "$installDir\wallpapers.zip"
+try {
+    Invoke-WebRequest -Uri "https://github.com/Venxe/wallpapers/archive/refs/heads/main.zip" -OutFile $zipFile -TimeoutSec 600
+} catch {
+    Write-Host "An error occurred during download: $_"
+    exit 1
+}
 
 Write-Host "Extracting wallpapers..."
-Expand-Archive -Path "$installDir\wallpapers.zip" -DestinationPath "$installDir"
+try {
+    Expand-Archive -Path $zipFile -DestinationPath $installDir -Force
+} catch {
+    Write-Host "Error during extraction: $_"
+    exit 1
+}
 
 Write-Host "Processing and moving wallpapers..."
 Get-ChildItem -Recurse -File -Path "$installDir\wallpapers-main" | Where-Object { $_.Extension -match "jpg|jpeg|png|webp" } | ForEach-Object {
