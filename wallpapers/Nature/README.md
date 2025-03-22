@@ -1,7 +1,7 @@
 # Nature Wallpapers
 
 tags: `leaves`
-[![Nature 1](./nature1.jpg)](https://raw.githubusercontent.com/Venxe/wallpapers/main/wallpapers/Nature/nature1.jpg?token=GHSAT0AAAAAADARY4AZZEFXPKH5LITGYHVYZ6662NA)
+[![Nature 1](./nature1.jpg)](https://raw.githubusercontent.com/Venxe/wallpapers/refs/heads/main/wallpapers/Nature/nature1.jpg?token=GHSAT0AAAAAADARY4AYKMG44HDXUIGIU46IZ67C6JA)
 
 tags: `leaves`
 [![Nature 2](./nature2.JPG)](https://raw.githubusercontent.com/Venxe/wallpapers/main/wallpapers/Nature/nature2.JPG?token=GHSAT0AAAAAADARY4AZZEFXPKH5LITGYHVYZ6662NA)
