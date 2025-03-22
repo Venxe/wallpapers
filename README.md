@@ -17,7 +17,7 @@ The wallpapers are organized into the following categories:
 - [**Art**](wallpapers/Art/) – A collection of various artistic works, including digital and traditional styles.
 
 ## Installation
-Run the following command to download and install the wallpapers:
+Run the following command in the terminal to download and install the wallpapers:
 ### Linux:
 ```bash
 curl -sSL https://raw.githubusercontent.com/Venxe/wallpapers/main/installers/install_linux.sh -o install_linux.sh && chmod +x install_linux.sh && ./install_linux.sh
