@@ -20,11 +20,11 @@ The wallpapers are organized into the following categories:
 Run the following command to download and install the wallpapers:
 ### Linux:
 ```bash
-curl -sSL https://raw.githubusercontent.com/Venxe/wallpapers/main/install_wallpapers.sh -o install_wallpapers.sh && chmod +x install_wallpapers.sh && ./install_wallpapers.sh
+curl -sSL https://raw.githubusercontent.com/Venxe/wallpapers/main/installers/install_linux.sh -o install_linux.sh && chmod +x install_linux.sh && ./install_linux.sh
 ```
 ### Windows:
 ```bash
-curl -sSL https://raw.githubusercontent.com/Venxe/wallpapers/main/install_wallpapers.sh -o install_wallpapers.sh && chmod +x install_wallpapers.sh && ./install_wallpapers.sh
+curl -sSL https://raw.githubusercontent.com/Venxe/wallpapers/main/installers/install_wallpapers.bat -o install_wallpapers.bat && start install_wallpapers.bat
 ```
 
 ## Disclaimer
