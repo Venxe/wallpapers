@@ -1,38 +1,30 @@
-# Install-Wallpapers.ps1
+# Set variables
+$INSTALL_DIR = "$env:TEMP\wallpapers"
+$WALLS_DIR = "C:\Users\$env:USERNAME\Pictures\Wallpapers\Walls"
 
-$installDir = "C:\temp\wallpapers"
-$wallsDir = "C:\Users\sayimburak\wallpapers\walls"
-$zipFile = "$installDir\wallpapers.zip"
-
-if (-not (Test-Path -Path $installDir)) {
-    New-Item -ItemType Directory -Force -Path $installDir
-}
-
+# Download wallpapers repository
 Write-Host "Downloading wallpapers repository..."
-try {
-    Invoke-WebRequest -Uri "https://github.com/Venxe/wallpapers/archive/refs/heads/main.zip" -OutFile $zipFile -TimeoutSec 600
-} catch {
-    Write-Host "An error occurred during download: $_"
-    exit 1
-}
+git clone --depth 1 https://github.com/Venxe/wallpapers.git "$INSTALL_DIR"
 
-Write-Host "Extracting wallpapers..."
-try {
-    Expand-Archive -Path $zipFile -DestinationPath $installDir -Force
-} catch {
-    Write-Host "Error during extraction: $_"
-    exit 1
-}
-
+# Processing and moving wallpapers
 Write-Host "Processing and moving wallpapers..."
-Get-ChildItem -Recurse -File -Path "$installDir\wallpapers-main" | Where-Object { $_.Extension -match "jpg|jpeg|png|webp" } | ForEach-Object {
-    $category = $_.DirectoryName -replace "$installDir\wallpapers-main", ""
-    $destDir = Join-Path -Path $wallsDir -ChildPath $category
-    New-Item -ItemType Directory -Force -Path $destDir
-    Move-Item -Path $_.FullName -Destination $destDir
+$files = Get-ChildItem -Path "$INSTALL_DIR\wallpapers" -Recurse -Include *.jpg, *.jpeg, *.png, *.webp
+
+foreach ($file in $files) {
+    $category = $file.DirectoryName.Replace("$INSTALL_DIR\wallpapers\", "")
+    $dest_dir = Join-Path -Path $WALLS_DIR -ChildPath $category
+
+    # Create category directory if it doesn't exist
+    if (-not (Test-Path -Path $dest_dir)) {
+        New-Item -ItemType Directory -Force -Path $dest_dir
+    }
+
+    # Move the file
+    Move-Item -Path $file.FullName -Destination $dest_dir
 }
 
+# Clean up temporary files
 Write-Host "Cleaning up temporary files..."
-Remove-Item -Recurse -Force "$installDir"
+Remove-Item -Recurse -Force $INSTALL_DIR
 
 Write-Host "Wallpaper installation complete."
