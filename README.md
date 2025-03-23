@@ -2,6 +2,7 @@
 
 <p align="center">
   <img alt="Wallpapers" src="https://img.shields.io/github/directory-file-count/Venxe/wallpapers/wallpapers?style=for-the-badge&label=Wallpapers&color=3E68D7&labelColor=151724">
+  <a href="https://www.buymeacoffee.com/sayimburak" target="_blank"><img src="https://cdn.buymeacoffee.com/buttons/v2/default-yellow.png" alt="Buy Me A Coffee" style="height: 28px !important;" ></a>
 </p>
 
 # Awesome Wallpaper Collection
