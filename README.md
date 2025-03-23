@@ -1,5 +1,9 @@
 [![Wallpaper Preview](preview.jpg)](http://github.com/Venxe/wallpapers?tab=readme-ov-file#categories)
 
+<p align="center">
+  <img alt="Wallpapers" src="https://img.shields.io/github/directory-file-count/Venxe/wallpapers/wallpapers?style=for-the-badge&label=Wallpapers&color=3E68D7&labelColor=151724">
+</p>
+
 # Awesome Wallpaper Collection
 
 Welcome to my awesome wallpaper collection! This repository features a carefully curated selection of stunning wallpapers, all created by talented and creative artists. It will be regularly updated with new wallpapers to keep the collection fresh and inspiring!
