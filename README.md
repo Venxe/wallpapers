@@ -1,4 +1,4 @@
-![Wallpaper Collection](preview.jpg)
+[![Wallpaper Preview](preview.jpg)](https://github.com/Venxe/wallpapers/blob/main/README.md#categories)
 
 # Awesome Wallpaper Collection
 
