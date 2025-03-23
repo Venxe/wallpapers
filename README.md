@@ -1,3 +1,5 @@
+![Wallpaper Collection](banner.jpg)
+
 # Awesome Wallpaper Collection
 
 Welcome to my awesome wallpaper collection! This repository features a carefully curated selection of stunning wallpapers, all created by talented and creative artists.
