@@ -1,4 +1,4 @@
-[![Wallpaper Preview](preview.jpg)](https://github.com/Venxe/wallpapers/blob/main/README.md#categories)
+[![Wallpaper Preview](preview.jpg)](http://github.com/Venxe/wallpapers?tab=readme-ov-file#categories)
 
 # Awesome Wallpaper Collection
 
