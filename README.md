@@ -1,4 +1,4 @@
-![Wallpaper Collection](banner.jpg)
+![Wallpaper Collection](preview.jpg)
 
 # Awesome Wallpaper Collection
 
