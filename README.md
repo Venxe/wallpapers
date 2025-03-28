@@ -10,7 +10,7 @@
 Welcome to my awesome wallpaper collection! This repository features a carefully curated selection of stunning wallpapers, all created by talented and creative artists. It will be regularly updated with new wallpapers to keep the collection fresh and inspiring!
 
 ## 🖼️ Image Quality
-All wallpapers in this collection are at least 4K resolution. To optimize file size without sacrificing quality, high-resolution PNG images have been converted to JPEG using "jpeg-li." Images that were already well-optimized in their original format remain unchanged.
+All wallpapers in this collection are provided in at least 4K resolution and have been optimized for both superior quality and minimal file size using tools like 'Jpegli' and 'OptiPNG'.
 
 ## 📂 Categories
 The wallpapers are organized into the following categories:
