@@ -15,13 +15,14 @@ All wallpapers in this collection are at least 4K resolution. To optimize file s
 ## 📂 Categories
 The wallpapers are organized into the following categories:
 
-- [**Nature**](wallpapers/Nature#nature-wallpapers) – Stunning landscapes, forests, oceans, and more.
-- [**Urban**](wallpapers/Urban/) – Captivating cityscapes and architectural marvels.
 - [**Abstract**](wallpapers/Abstract/) – Creative and imaginative abstract designs.
-- [**Minimalism**](wallpapers/Minimalism/) – Elegant and clean minimalist art.
-- [**Space**](wallpapers/Space/) – Fascinating cosmic and astronomical visuals.
-- [**Gaming**](wallpapers/Gaming/) – High-energy and visually captivating gaming-themed wallpapers.
 - [**Art**](wallpapers/Art/) – A collection of various artistic works, including digital and traditional styles.
+- [**Gaming**](wallpapers/Gaming/) – High-energy and visually captivating gaming-themed wallpapers.
+- [**Minimalism**](wallpapers/Minimalism/) – Elegant and clean minimalist art.
+- [**Nature**](wallpapers/Nature#nature-wallpapers) – Stunning landscapes, forests, oceans, and more.
+- [**Space**](wallpapers/Space/) – Fascinating cosmic and astronomical visuals.
+- [**Urban**](wallpapers/Urban/) – Captivating cityscapes and architectural marvels.
+
 
 ## ⚙️ Installation
 Run the following command in the terminal to download and install the wallpapers:
