@@ -17,9 +17,6 @@ find "$INSTALL_DIR/wallpapers" -type f \( -iname "*.jpg" -o -iname "*.jpeg" -o -
   mv "$file" "$dest_dir"
 ' bash {} "$INSTALL_DIR/wallpapers" "$WALLS_DIR" \;
 
-echo "Cleaning up temporary files..."
-rm -rf "$INSTALL_DIR"
-
 echo "Wallpaper installation complete."
-
+rm -rf "$INSTALL_DIR"
 rm -- "$0"
