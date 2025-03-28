@@ -17,6 +17,7 @@ The wallpapers are organized into the following categories:
 
 - [**Abstract**](wallpapers/Abstract/) – Creative and imaginative abstract designs.
 - [**Art**](wallpapers/Art/) – A collection of various artistic works, including digital and traditional styles.
+- [**Coding**](wallpapers/Coding/) – Programming, coding environments, and tech.
 - [**Gaming**](wallpapers/Gaming/) – High-energy and visually captivating gaming-themed wallpapers.
 - [**Minimalism**](wallpapers/Minimalism/) – Elegant and clean minimalist art.
 - [**Nature**](wallpapers/Nature#nature-wallpapers) – Stunning landscapes, forests, oceans, and more.
