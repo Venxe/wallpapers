@@ -37,10 +37,10 @@ Invoke-WebRequest -Uri "https://raw.githubusercontent.com/Venxe/wallpapers/main/
 <sub>📁 **Linux:** `~/Pictures/Wallpapers`</sub>  
 <sub>📁 **Windows:** `C:\Users\%USERNAME%\Pictures\Wallpapers`</sub>
 
-## ⚠️ Disclaimer
+## 📜 Disclaimer
 This collection is provided under the terms specified in the [LICENSE](LICENSE) file. All wallpapers are the property of their respective creators. I do not claim ownership of any works here; I have only compiled and optimized them for easier access.  
 
 If you are the original creator and would like credit or removal, please [open an issue](../../issues).
 
-## 💡 Credits
-Special thanks to the communities at [Wallhaven](https://wallhaven.cc/) and [Reddit](https://www.reddit.com/) forums for providing these amazing designs.
+### Credits
+Special thanks to the communities at [Wallhaven](https://wallhaven.cc/) and the [r/unixporn](https://www.reddit.com/r/unixporn/) subreddit for providing these amazing wallpapers.
