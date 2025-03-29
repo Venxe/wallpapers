@@ -22,7 +22,7 @@ $wallpapers = Get-ChildItem -Path "$installDir\wallpapers" -Recurse -Include *.j
 if ($wallpapers.Count -eq 0) {
     Write-Host "No wallpapers found to move." -ForegroundColor Red
 } else {
-    Write-Host "Found $($wallpapers.Count) wallpapers. Moving them..." -ForegroundColor Cyan
+    Write-Host "Found $($wallpapers.Count) wallpapers. Organizing them..." -ForegroundColor Cyan
 }
 
 $wallpapers | ForEach-Object {
@@ -30,7 +30,7 @@ $wallpapers | ForEach-Object {
     $destDir = "$wallpapersDir\$category"
 
     if (-not (Test-Path $destDir)) {
-        Write-Host "Creating category folder: $destDir" -ForegroundColor Green
+        Write-Host "Category folder '$category' does not exist. Creating it..." -ForegroundColor Green
         New-Item -ItemType Directory -Force -Path $destDir
     }
 
@@ -39,7 +39,6 @@ $wallpapers | ForEach-Object {
     if (Test-Path $destFile) {
         Write-Warning "File '$($_.Name)' already exists in the destination directory. Skipping." 
     } else {
-        Write-Host "Moving file '$($_.Name)' to $destDir" -ForegroundColor Green
         Move-Item -Path $_.FullName -Destination $destDir
     }
 }
