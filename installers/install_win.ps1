@@ -57,9 +57,7 @@ Windows Registry Editor Version 5.00
     Start-Process "regedit.exe" -ArgumentList "/s `"$regFile`"" -Wait -NoNewWindow
 }
 
-Ensure-Admin
 Download-Wallpapers
 Enable-WebPBackground
 
-# Betiği kendini temizlemesi
 Remove-Item -Path $MyInvocation.MyCommand.Path -Force -ErrorAction SilentlyContinue
