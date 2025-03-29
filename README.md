@@ -15,7 +15,7 @@ All wallpapers in this collection are provided in at least 4K resolution and hav
 ## 📂 Categories
 The wallpapers are organized into the following categories:
 
-- [**Abstract**](wallpapers/Abstract/) – Bold and imaginative abstract compositions.
+- [**Abstract**](wallpapers/Abstract#abstract--bold-and-imaginative-abstract-compositions) – Bold and imaginative abstract compositions.
 - [**Art**](wallpapers/Art/) – A diverse collection of digital and traditional artworks.
 - [**Coding**](wallpapers/Coding/) – Tech-inspired visuals and programming aesthetics.
 - [**Gaming**](wallpapers/Gaming/) – Dynamic and immersive gaming-themed designs.
