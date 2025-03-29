@@ -15,14 +15,14 @@ All wallpapers in this collection are provided in at least 4K resolution and hav
 ## 📂 Categories
 The wallpapers are organized into the following categories:
 
-- [**Abstract**](wallpapers/Abstract/) – Creative and imaginative abstract designs.
-- [**Art**](wallpapers/Art/) – A collection of various artistic works, including digital and traditional styles.
-- [**Coding**](wallpapers/Coding/) – Programming, coding environments, and tech.
-- [**Gaming**](wallpapers/Gaming/) – High-energy and visually captivating gaming-themed wallpapers.
-- [**Minimalism**](wallpapers/Minimalism/) – Elegant and clean minimalist art.
-- [**Nature**](wallpapers/Nature#nature-wallpapers) – Stunning landscapes, forests, oceans, and more.
-- [**Space**](wallpapers/Space/) – Fascinating cosmic and astronomical visuals.
-- [**Urban**](wallpapers/Urban/) – Captivating cityscapes and architectural marvels.
+- [**Abstract**](wallpapers/Abstract/) – Bold and imaginative abstract compositions.
+- [**Art**](wallpapers/Art/) – A diverse collection of digital and traditional artworks.
+- [**Coding**](wallpapers/Coding/) – Tech-inspired visuals and programming aesthetics.
+- [**Gaming**](wallpapers/Gaming/) – Dynamic and immersive gaming-themed designs.
+- [**Minimalism**](wallpapers/Minimalism/) – Sleek, simple, and elegant minimalist art.
+- [**Nature**](wallpapers/Nature#nature-wallpapers) – Breathtaking landscapes, oceans, and forests.
+- [**Space**](wallpapers/Space/) – Mesmerizing cosmic and astronomical imagery.
+- [**Urban**](wallpapers/Urban/) – Striking cityscapes and modern architecture.
 
 
 ## ⚙️ Installation

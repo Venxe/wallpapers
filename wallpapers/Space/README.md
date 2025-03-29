@@ -1,1 +1,1 @@
-# Space Wallpapers
+# Space – Mesmerizing cosmic and astronomical imagery

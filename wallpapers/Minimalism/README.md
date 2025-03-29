@@ -1,1 +1,1 @@
-# Gaming Wallpapers
+# Minimalism – Sleek, simple, and elegant minimalist art

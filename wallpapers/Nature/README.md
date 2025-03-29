@@ -1,4 +1,4 @@
-# Nature Wallpapers
+# Nature – Breathtaking landscapes, oceans, and forests
 
 tags: `leaves`
 [![Nature 1](./nature1.jpg)](https://raw.githubusercontent.com/Venxe/wallpapers/refs/heads/main/wallpapers/Nature/nature1.jpg)
