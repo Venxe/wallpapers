@@ -38,3 +38,6 @@ tags: `wave` `dark`
 
 tags: `wave` `dark`
 [![Wave 2](./abstract-wave-dark-02.jpg)](https://raw.githubusercontent.com/Venxe/wallpapers/refs/heads/main/wallpapers/Abstract/abstract-neon-circle-02.jpg)
+
+tags: `road` `dark`
+[![Road](./abstract-road-dark-01.jpg)](https://raw.githubusercontent.com/Venxe/wallpapers/refs/heads/main/wallpapers/Abstract/abstract-road-dark-01.jpg)
