@@ -8,15 +8,12 @@ if ($env:LANG -match "tr") {
 }
 
 if (-not (Test-Path $wallpapersDir)) {
-    Write-Host "Creating wallpapers directory at: $wallpapersDir" -ForegroundColor Green
     New-Item -ItemType Directory -Force -Path $wallpapersDir
-} else {
-    Write-Host "Wallpapers directory already exists: $wallpapersDir" -ForegroundColor Yellow
 }
 
-Write-Host "Cloning wallpapers from GitHub..." -ForegroundColor Cyan
 git clone --depth 1 https://github.com/Venxe/wallpapers.git $installDir
 
+<<<<<<< HEAD
 $wallpapers = Get-ChildItem -Path "$installDir\wallpapers" -Recurse -Include *.jpg, *.jpeg, *.png, *.webp
 
 if ($wallpapers.Count -eq 0) {
@@ -26,24 +23,34 @@ if ($wallpapers.Count -eq 0) {
 }
 
 $wallpapers | ForEach-Object {
+=======
+Get-ChildItem -Path "$installDir\wallpapers" -Recurse -Include *.jpg, *.jpeg, *.png, *.webp | ForEach-Object {
+>>>>>>> parent of 31acfc2 (Update install_win.ps1)
     $category = $_.DirectoryName.Replace("$installDir\wallpapers\", "")
     $destDir = "$wallpapersDir\$category"
 
     if (-not (Test-Path $destDir)) {
+<<<<<<< HEAD
         Write-Host "Category folder '$category' does not exist. Creating it..." -ForegroundColor Green
+=======
+>>>>>>> parent of 31acfc2 (Update install_win.ps1)
         New-Item -ItemType Directory -Force -Path $destDir
     }
 
     $destFile = "$destDir\$($_.Name)"
 
     if (Test-Path $destFile) {
-        Write-Warning "File '$($_.Name)' already exists in the destination directory. Skipping." 
+        Write-Warning "File '$($_.Name)' already exists in the destination directory. Skipping."
     } else {
         Move-Item -Path $_.FullName -Destination $destDir
     }
 }
 
+<<<<<<< HEAD
 Write-Host "Wallpaper installation complete!" -ForegroundColor Green
 
+=======
+Write-Host "Wallpaper installation complete."
+>>>>>>> parent of 31acfc2 (Update install_win.ps1)
 Remove-Item -Recurse -Force $installDir
 Remove-Item -Path $MyInvocation.MyCommand.Path -Force
