@@ -7,10 +7,10 @@ tags: `flowers`
 [![Flowers](./nature-flowers-01.jpg)](https://raw.githubusercontent.com/Venxe/wallpapers/refs/heads/main/wallpapers/Nature/nature-flowers-01.jpg)
 
 tags: `forest` `mist`
-[![Forest 1](./nature-forest-mist-02.jpg)](https://raw.githubusercontent.com/Venxe/wallpapers/refs/heads/main/wallpapers/Nature/nature-forest-mist-02.jpg)
+[![Forest 1](./nature-forest-mist-01.jpg)](https://raw.githubusercontent.com/Venxe/wallpapers/refs/heads/main/wallpapers/Nature/nature-forest-mist-01.jpg)
 
 tags: `forest` `mist`
-[![Forest 2](./nature-forest-mist-03.jpg)](https://raw.githubusercontent.com/Venxe/wallpapers/refs/heads/main/wallpapers/Nature/nature-forest-mist-03.jpg)
+[![Forest 2](./nature-forest-mist-02.jpg)](https://raw.githubusercontent.com/Venxe/wallpapers/refs/heads/main/wallpapers/Nature/nature-forest-mist-02.jpg)
 
 tags: `forest` `road`
 [![Forest 3](./nature-forest-road-01.jpg)](https://raw.githubusercontent.com/Venxe/wallpapers/refs/heads/main/wallpapers/Nature/nature-forest-road-01.jpg)

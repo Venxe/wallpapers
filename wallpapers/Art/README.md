@@ -1,17 +1,5 @@
 # Art – A diverse collection of digital and traditional artworks
 
-tags: `darkstalkers` `morrigan`
-[![Darkstalkers](./anime-darkstalkers-morrigan-01.jpg)](https://raw.githubusercontent.com/Venxe/wallpapers/refs/heads/main/wallpapers/Art/anime-darkstalkers-morrigan-01.jpg)
-
-tags: `edgerunners` `david` `lucy`
-[![Edgerunners 1](./anime-edgerunners-01.jpg)](https://raw.githubusercontent.com/Venxe/wallpapers/refs/heads/main/wallpapers/Art/anime-edgerunners-01.jpg)
-
-tags: `edgerunners` `lucy`
-[![Edgerunners 2](./anime-edgerunners-lucy-01.jpg)](https://raw.githubusercontent.com/Venxe/wallpapers/refs/heads/main/wallpapers/Art/anime-edgerunners-lucy-01.jpg)
-
-tags: `jujutsu kaisen` `nobara`
-[![Jujutsu Kaisen](./anime-jujutsu-kaisen-nobara-01.jpg)](https://raw.githubusercontent.com/Venxe/wallpapers/refs/heads/main/wallpapers/Art/anime-jujutsu-kaisen-nobara-01.jpg)
-
 tags: `asian`
 [![Asian](./art-asian-01.jpg)](https://raw.githubusercontent.com/Venxe/wallpapers/refs/heads/main/wallpapers/Art/art-asian-01.jpg)
 
