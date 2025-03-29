@@ -1,5 +1,11 @@
 $installDir = "$env:TEMP\wallpapers"
-$wallpapersDir = "C:\Users\$env:USERNAME\Pictures\Wallpapers"
+$wallpapersDir = ""
+
+if ($env:LANG -match "tr") {
+    $wallpapersDir = "$env:USERPROFILE\Resimler\Wallpapers"
+} else {
+    $wallpapersDir = "$env:USERPROFILE\Pictures\Wallpapers"
+}
 
 if (-not (Test-Path $wallpapersDir)) {
     New-Item -ItemType Directory -Force -Path $wallpapersDir
