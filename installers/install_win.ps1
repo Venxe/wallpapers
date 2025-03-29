@@ -11,9 +11,11 @@ if (-not (Test-Path $wallpapersDir)) {
     New-Item -ItemType Directory -Force -Path $wallpapersDir
 }
 
+# Git ile indirme işlemini başlat
 git clone --depth 1 https://github.com/Venxe/wallpapers.git $installDir
 
-Get-ChildItem -Path "$installDir\wallpapers" -Recurse -Include *.jpg, *.jpeg, *.png, *.webp | ForEach-Object {
+# Get-ChildItem çıktısını gizle
+$null = Get-ChildItem -Path "$installDir\wallpapers" -Recurse -Include *.jpg, *.jpeg, *.png, *.webp | ForEach-Object {
     $category = $_.DirectoryName.Replace("$installDir\wallpapers\", "")
     $destDir = "$wallpapersDir\$category"
 
