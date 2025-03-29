@@ -15,14 +15,14 @@ All wallpapers in this collection are provided in at least 4K resolution and hav
 ## 📂 Categories
 The wallpapers are organized into the following categories:
 
-- [**Abstract**](wallpapers/Abstract#abstract--bold-and-imaginative-abstract-compositions) – Bold and imaginative abstract compositions.
-- [**Art**](wallpapers/Art/) – A diverse collection of digital and traditional artworks.
-- [**Coding**](wallpapers/Coding/) – Tech-inspired visuals and programming aesthetics.
-- [**Gaming**](wallpapers/Gaming/) – Dynamic and immersive gaming-themed designs.
-- [**Minimalism**](wallpapers/Minimalism/) – Sleek, simple, and elegant minimalist art.
-- [**Nature**](wallpapers/Nature#nature-wallpapers) – Breathtaking landscapes, oceans, and forests.
-- [**Space**](wallpapers/Space/) – Mesmerizing cosmic and astronomical imagery.
-- [**Urban**](wallpapers/Urban/) – Striking cityscapes and modern architecture.
+- [**Abstract**](wallpapers/Abstract/README.md) – Bold and imaginative abstract compositions.
+- [**Art**](wallpapers/Art/README.md) – A diverse collection of digital and traditional artworks.
+- [**Coding**](wallpapers/Coding/README.md) – Tech-inspired visuals and programming aesthetics.
+- [**Gaming**](wallpapers/Gaming/README.md) – Dynamic and immersive gaming-themed designs.
+- [**Minimalism**](wallpapers/Minimalism/README.md) – Sleek, simple, and elegant minimalist art.
+- [**Nature**](wallpapers/Nature/README.md) – Breathtaking landscapes, oceans, and forests.
+- [**Space**](wallpapers/Space/README.md) – Mesmerizing cosmic and astronomical imagery.
+- [**Urban**](wallpapers/Urban/README.md) – Striking cityscapes and modern architecture.
 
 
 ## ⚙️ Installation
