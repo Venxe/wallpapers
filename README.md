@@ -1,7 +1,7 @@
 [![Wallpaper Preview](preview.jpg)](http://github.com/Venxe/wallpapers?tab=readme-ov-file#categories)
 
 <p align="center">
-  <img alt="Wallpapers" src="https://img.shields.io/badge/Wallpapers-123-3E68D7?style=for-the-badge&label=Wallpapers&color=3E68D7&labelColor=151724">
+  <img alt="Wallpapers" src="https://img.shields.io/badge/Wallpapers-118-3E68D7?style=for-the-badge&label=Wallpapers&color=3E68D7&labelColor=151724">
   <a href="https://www.buymeacoffee.com/sayimburak" target="_blank"><img src="https://cdn.buymeacoffee.com/buttons/v2/default-yellow.png" alt="Buy Me A Coffee" style="height: 28px !important;" ></a>
 </p>
 
