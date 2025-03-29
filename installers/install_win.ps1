@@ -1,6 +1,8 @@
 $installDir = "$env:TEMP\wallpapers"
 $wallpapersDir = ""
 
+$OutputEncoding = New-Object -typename System.Text.UTF8Encoding
+
 if ($env:LANG -match "tr") {
     $wallpapersDir = "$env:USERPROFILE\Resimler\Wallpapers"
 } else {
