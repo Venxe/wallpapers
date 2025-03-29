@@ -11,11 +11,10 @@ if (-not (Test-Path $wallpapersDir)) {
     New-Item -ItemType Directory -Force -Path $wallpapersDir
 }
 
-# Git ile indirme işlemini başlat
+Write-Host "Cloning into '$installDir'..." -ForegroundColor Cyan
 git clone --depth 1 https://github.com/Venxe/wallpapers.git $installDir
 
-# Get-ChildItem çıktısını gizle
-$null = Get-ChildItem -Path "$installDir\wallpapers" -Recurse -Include *.jpg, *.jpeg, *.png, *.webp | ForEach-Object {
+Get-ChildItem -Path "$installDir\wallpapers" -Recurse -Include *.jpg, *.jpeg, *.png, *.webp | ForEach-Object {
     $category = $_.DirectoryName.Replace("$installDir\wallpapers\", "")
     $destDir = "$wallpapersDir\$category"
 
@@ -26,12 +25,12 @@ $null = Get-ChildItem -Path "$installDir\wallpapers" -Recurse -Include *.jpg, *.
     $destFile = "$destDir\$($_.Name)"
 
     if (Test-Path $destFile) {
-        Write-Warning -ForegroundColor Yellow "File '$($_.Name)' already exists in the destination directory. Skipping."
+        Write-Warning "File '$($_.Name)' already exists in the destination directory. Skipping."
     } else {
         Move-Item -Path $_.FullName -Destination $destDir
     }
 }
 
-Write-Host -ForegroundColor Green "Wallpaper installation complete."
-Remove-Item -Recurse -Force $installDir
-Remove-Item -Path $MyInvocation.MyCommand.Path -Force
+Write-Host "Wallpaper installation complete." -ForegroundColor Green
+Remove-Item -Recurse -Force $installDir | Out-Null
+Remove-Item -Path $MyInvocation.MyCommand.Path -Force | Out-Null
