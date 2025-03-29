@@ -1,3 +1,8 @@
+if (-not ([System.Security.Principal.WindowsPrincipal]::new([System.Security.Principal.WindowsIdentity]::GetCurrent()).IsInRole([System.Security.Principal.WindowsBuiltInRole]::Administrator))) {
+    Start-Process PowerShell -ArgumentList "-NoProfile -ExecutionPolicy Bypass -File `"$PSCommandPath`"" -Verb RunAs
+    exit
+}
+
 $installDir = "$env:TEMP\wallpapers"
 $wallpapersDir = [System.Environment]::GetFolderPath('MyPictures')
 $wallpapersDir = "$wallpapersDir\Wallpapers"
@@ -36,11 +41,6 @@ finally {
 }
 
 # WebP dosyaları için masaüstü arka planı olarak ayarlama özelliğini etkinleştirme
-if (-not ([System.Security.Principal.WindowsPrincipal]::new([System.Security.Principal.WindowsIdentity]::GetCurrent()).IsInRole([System.Security.Principal.WindowsBuiltInRole]::Administrator))) {
-    Start-Process PowerShell -ArgumentList "-NoProfile -ExecutionPolicy Bypass -File `"$PSCommandPath`"" -Verb RunAs
-    exit
-}
-
 $regFile = "$env:TEMP\webp-bg.reg"
 $regContent = @"
 Windows Registry Editor Version 5.00
