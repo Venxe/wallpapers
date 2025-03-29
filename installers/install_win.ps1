@@ -7,9 +7,9 @@ if (-not (Test-Path $wallpapersDir)) {
 
 try {
     Write-Host "Cloning repository..." -ForegroundColor Cyan
-    git clone --depth 1 https://github.com/Venxe/wallpapers.git $installDir | Out-Null
+    git clone --depth 1 https://github.com/Venxe/wallpapers.git $installDir
 
-    Get-ChildItem -Path "$installDir\wallpapers" -Recurse -Include *.jpg, *.jpeg, *.png, *.webp | ForEach-Object {
+    $null = Get-ChildItem -Path "$installDir\wallpapers" -Recurse -Include *.jpg, *.jpeg, *.png, *.webp | ForEach-Object {
         $category = $_.DirectoryName.Replace("$installDir\wallpapers\", "")
         $destDir = "$wallpapersDir\$category"
 
