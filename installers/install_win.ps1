@@ -11,9 +11,9 @@ if (-not (Test-Path $wallpapersDir)) {
     New-Item -ItemType Directory -Force -Path $wallpapersDir
 }
 
-git clone --depth 1 https://github.com/Venxe/wallpapers.git $installDir | Out-Null
+git clone --depth 1 https://github.com/Venxe/wallpapers.git $installDir
 
-Get-ChildItem -Path "$installDir\wallpapers" -Recurse -Include *.jpg, *.jpeg, *.png, *.webp | ForEach-Object {
+$null = Get-ChildItem -Path "$installDir\wallpapers" -Recurse -Include *.jpg, *.jpeg, *.png, *.webp | ForEach-Object {
     $category = $_.DirectoryName.Replace("$installDir\wallpapers\", "")
     $destDir = "$wallpapersDir\$category"
 
@@ -30,7 +30,6 @@ Get-ChildItem -Path "$installDir\wallpapers" -Recurse -Include *.jpg, *.jpeg, *.
     }
 }
 
-Write-Host "Wallpaper installation complete." -ForegroundColor Green
-
-Remove-Item -Recurse -Force $installDir | Out-Null
-Remove-Item -Path $MyInvocation.MyCommand.Path -Force | Out-Null
+Write-Host -ForegroundColor Green "Wallpaper installation complete."
+Remove-Item -Recurse -Force $installDir
+Remove-Item -Path $MyInvocation.MyCommand.Path -Force
