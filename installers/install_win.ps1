@@ -1,10 +1,3 @@
-function Ensure-Admin {
-    if (-not ([System.Security.Principal.WindowsPrincipal]::new([System.Security.Principal.WindowsIdentity]::GetCurrent()).IsInRole([System.Security.Principal.WindowsBuiltInRole]::Administrator))) {
-        Start-Process PowerShell -ArgumentList "-NoProfile -ExecutionPolicy Bypass -File `"$PSCommandPath`"" -Verb RunAs
-        exit
-    }
-}
-
 function Download-Wallpapers {
     $installDir = "$env:TEMP\wallpapers"
     $wallpapersDir = [System.Environment]::GetFolderPath('MyPictures') + "\Wallpapers"
