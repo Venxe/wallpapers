@@ -26,13 +26,13 @@ Get-ChildItem -Path "$installDir\wallpapers" -Recurse -Include *.jpg, *.jpeg, *.
     $destFile = "$destDir\$($_.Name)"
 
     if (Test-Path $destFile) {
-        Write-Warning -ForegroundColor Yellow "File '$($_.Name)' already exists in the destination directory. Skipping."
+        Write-Warning "$(Write-Host '⚠️ Warning:' -ForegroundColor Yellow) File '$($_.Name)' already exists in the destination directory. Skipping. ⏭️"
     } else {
         Move-Item -Path $_.FullName -Destination $destDir
-        Write-Host -ForegroundColor Green "Moved file: '$($_.Name)' to '$destDir'"
+        Write-Host "$(Write-Host '✅ Moved:' -ForegroundColor Green) '$($_.Name)' to '$destDir'"
     }
 }
 
-Write-Host -ForegroundColor Cyan "Wallpaper installation complete."
+Write-Host "$(Write-Host '🎉 Wallpaper installation complete!' -ForegroundColor Cyan)"
 Remove-Item -Recurse -Force $installDir
 Remove-Item -Path $MyInvocation.MyCommand.Path -Force
