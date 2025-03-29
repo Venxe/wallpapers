@@ -1,8 +1,6 @@
 $installDir = "$env:TEMP\wallpapers"
 $wallpapersDir = ""
 
-$OutputEncoding = New-Object -typename System.Text.UTF8Encoding
-
 if ($env:LANG -match "tr") {
     $wallpapersDir = "$env:USERPROFILE\Resimler\Wallpapers"
 } else {
@@ -26,13 +24,12 @@ Get-ChildItem -Path "$installDir\wallpapers" -Recurse -Include *.jpg, *.jpeg, *.
     $destFile = "$destDir\$($_.Name)"
 
     if (Test-Path $destFile) {
-        Write-Host "$(Write-Host '⚠️ Warning:' -ForegroundColor Yellow) File '$($_.Name)' already exists in the destination directory. Skipping. ⏭️" -ForegroundColor Yellow
+        Write-Warning -ForegroundColor Yellow "File '$($_.Name)' already exists in the destination directory. Skipping."
     } else {
         Move-Item -Path $_.FullName -Destination $destDir
-        Write-Host "$(Write-Host '✅ Moved:' -ForegroundColor Green) '$($_.Name)' to '$destDir'"
     }
 }
 
-Write-Host "$(Write-Host '🎉 Wallpaper installation complete!' -ForegroundColor Cyan)"
+Write-Host -ForegroundColor Green "Wallpaper installation complete."
 Remove-Item -Recurse -Force $installDir
 Remove-Item -Path $MyInvocation.MyCommand.Path -Force
