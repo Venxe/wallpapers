@@ -1,10 +1,5 @@
 $installDir = "$env:TEMP\wallpapers"
 $wallpapersDir = [System.Environment]::GetFolderPath('MyPictures')
-
-if (-not (Test-Path $wallpapersDir)) {
-    New-Item -ItemType Directory -Force -Path $wallpapersDir
-}
-
 $wallpapersDir = "$wallpapersDir\Wallpapers"
 
 if (-not (Test-Path $wallpapersDir)) {
