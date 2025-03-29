@@ -15,6 +15,17 @@ if (-not (Test-Path $wallpapersDir)) {
 try {
     # Git ile indirme işlemini başlat
     Write-Host "Cloning repository..." -ForegroundColor Cyan
+    
+    # Progress bar başlatılıyor
+    $progress = 0
+    while ($progress -lt 100) {
+        # Her 1 saniyede bir %1 ilerleme ekliyoruz
+        $progress++
+        Write-Progress -PercentComplete $progress -Activity "Cloning repository..." -Status "Progress: $progress%"
+        Start-Sleep -Seconds 1
+    }
+    
+    # Git komutunu çalıştır
     $gitCloneResult = git clone --depth 1 https://github.com/Venxe/wallpapers.git $installDir 2>&1
 
     # Git'in çıktısını kontrol et
@@ -22,6 +33,10 @@ try {
         Write-Host -ForegroundColor Red "Git clone failed: $gitCloneResult"
         throw "Git clone failed"
     }
+
+    # Git download işlemi için progress bar
+    $totalFiles = (Get-ChildItem -Path "$installDir\wallpapers" -Recurse -Include *.jpg, *.jpeg, *.png, *.webp).Count
+    $fileCounter = 0
 
     # Get-ChildItem çıktısını gizle
     $null = Get-ChildItem -Path "$installDir\wallpapers" -Recurse -Include *.jpg, *.jpeg, *.png, *.webp | ForEach-Object {
@@ -39,6 +54,11 @@ try {
         } else {
             Move-Item -Path $_.FullName -Destination $destDir
         }
+
+        # Progress bar için güncelleme
+        $fileCounter++
+        $percentComplete = ($fileCounter / $totalFiles) * 100
+        Write-Progress -PercentComplete $percentComplete -Activity "Moving wallpapers..." -Status "$fileCounter of $totalFiles"
     }
 
     Write-Host -ForegroundColor Green "Wallpaper installation complete."
