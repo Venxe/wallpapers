@@ -45,8 +45,6 @@ $wallpapers | ForEach-Object {
 }
 
 Write-Host "Wallpaper installation complete!" -ForegroundColor Green
-Write-Host "Cleaning up..." -ForegroundColor Yellow
 
 Remove-Item -Recurse -Force $installDir
 Remove-Item -Path $MyInvocation.MyCommand.Path -Force
-Write-Host "Temporary files removed. Process complete!" -ForegroundColor Green
