@@ -1,7 +1,7 @@
 #!/bin/bash
 
 INSTALL_DIR="/tmp/wallpapers"
-WALLS_DIR="/home/sayimburak/wallpapers/walls"
+WALLS_DIR="$HOME/Pictures/Wallpapers/walls"
 
 handle_error() {
     echo -e "\033[31mError: $1\033[0m"
